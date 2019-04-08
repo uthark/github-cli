@@ -1,0 +1,18 @@
+[auth]
+    # type defines authentication type. Supports Personal Access Token and OAuth 2.0 tokens.
+    "type" = "token"
+    "token" = "<username>:<token>"
+
+#    "type" = "oauth2" 
+    # Client ID is a github application id.
+#    "client_id" = "<client_id>"
+    # Client Secret for OAuth2. Should be embedded in binary.    
+#    "client_secret" = "<client_secret>"
+[global]
+    "base_url" = "https://github.com"
+    "api_url" = "https://api.github.com"
+    # Filter PRs by state
+    # Valid options: open, closed, or all.
+    # see https://developer.github.com/v3/pulls/#list-pull-requests
+    "pr_state" = "all"
+    "auth_file" = "./github-cli.auth"
